@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BaseLayout from "@/components/base-layout";
+import Image from '../public/background.jpg';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <BaseLayout>
-      {children}
+    <BaseLayout image={Image}>
       {children}
     </BaseLayout>
   );
