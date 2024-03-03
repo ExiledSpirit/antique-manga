@@ -20,9 +20,9 @@ export default function BaseLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-auto`}>
-        <div className='bg-white h-screen m-auto min-h-screen max-w-[1000px] md:max-w-[768px] sm:max-w-[490px] max-h-screen px-8 py-10'> { /** Wrapper for the application responsiveness. */ }
-          <Link href="/" className="max-w-full h-16 block relative">
-            <Image fill src={image} alt={""} className="relative h-auto max-w-full"></Image>
+        <div className='bg-white min-h-screen h-auto m-auto max-w-[1000px] md:max-w-[768px] sm:max-w-[490px] px-8 py-10'> { /** Wrapper for the application responsiveness. */ }
+          <Link href="/" className="relative">
+            <Image src={image} alt={""} className="relative h-auto max-w-full"></Image>
           </Link>
           {children}
         </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import BaseLayout from "@/components/base-layout";
-import Image from '../public/background.jpg';
+import Image from '../public/header.jpg';
 
 export const metadata: Metadata = {
   title: "Create Next App",
