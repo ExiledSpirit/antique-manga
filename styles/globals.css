@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -30,4 +36,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.transition-anchor {
+  -webkit-transition: all .18s ease-out;
+  -moz-transition: all .18s ease-out;
+  -ms-transition: all .18s ease-out;
+  -o-transition: all .18s ease-out;
+  transition: all .18s ease-out;
 }

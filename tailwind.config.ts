@@ -14,7 +14,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        white: '#f3f3f3'
+        white: '#f3f3f3',
+        brown: '#8A5C3C'
       }
     },
     screens: {
