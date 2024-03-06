@@ -63,15 +63,27 @@ export default function BaseLayout({
 }: Readonly<BaseLayoutProps>) {
   return (
     <html lang="en">
-      <body className={`${abel.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-auto`}>
+      <body className={`${abel.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-auto text-black`}>
         <div className='bg-white min-h-screen h-auto m-auto max-w-[1000px] md:max-w-[768px] sm:max-w-[490px] px-8 py-10'> { /** Wrapper for the application responsiveness. */ }
           <Link href="/" className="relative">
             <Image src={image} alt={""} className="relative h-auto max-w-full"></Image>
           </Link>
-          <MenuComponent menu={menu}>
-
-          </MenuComponent>
-          {children}
+          <MenuComponent menu={menu} />
+          <section className="flex row">
+            <main className="w-auto"></main>
+            {children}
+            <aside className="w-1/3 bg-gray-200 p-2 h-fit">
+              <h4 className="uppercase text-center mb-4">Nos sigam no instagram</h4>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="h-[140px] w-full bg-black"></div>
+                <div className="h-[140px] w-full bg-black"></div>
+                <div className="h-[140px] w-full bg-black"></div>
+                <div className="h-[140px] w-full bg-black"></div>
+                <div className="h-[140px] w-full bg-black"></div>
+                <div className="h-[140px] w-full bg-black"></div>
+              </div>
+            </aside>
+          </section>
         </div>
       </body>
     </html>
