@@ -69,8 +69,7 @@ export default function BaseLayout({
             <Image src={image} alt={""} className="relative h-auto max-w-full"></Image>
           </Link>
           <MenuComponent menu={menu} />
-          <section className="flex row">
-            <main className="w-auto"></main>
+          <section className="flex row gap-4">
             {children}
             <aside className="w-1/3 bg-gray-200 p-2 h-fit">
               <h4 className="uppercase text-center mb-4">Nos sigam no instagram</h4>
