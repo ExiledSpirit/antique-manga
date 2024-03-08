@@ -63,13 +63,15 @@ export default function BaseLayout({
 }: Readonly<BaseLayoutProps>) {
   return (
     <html lang="en">
-      <body className={`${abel.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-auto text-black`}>
-        <div className='bg-white min-h-screen h-auto m-auto max-w-[1000px] md:max-w-[768px] sm:max-w-[490px] px-8 py-10'> { /** Wrapper for the application responsiveness. */ }
-          <Link href="/" className="relative">
-            <Image src={image} alt={""} className="relative h-auto max-w-full"></Image>
-          </Link>
+      <body className={`${abel.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-scroll text-black`}>
+        <div className='bg-white m-auto max-w-[1440px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[490px] px-8 py-10'> { /** Wrapper for the application responsiveness. */ }
+          <div className="w-full h-[500px]">
+            <Link href="/" className="relative w-full h-full">
+              <Image src={image} alt={""} className="relative h-full max-w-full object-cover"></Image>
+            </Link>
+          </div>
           <MenuComponent menu={menu} />
-          <section className="flex row gap-4">
+          <section className="flex row gap-4 mt-8">
             {children}
             <aside className="w-1/3 bg-gray-200 p-2 h-fit">
               <h4 className="uppercase text-center mb-4">Nos sigam no instagram</h4>
