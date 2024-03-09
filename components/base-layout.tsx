@@ -64,27 +64,29 @@ export default function BaseLayout({
   return (
     <html lang="en">
       <body className={`${abel.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-scroll text-black`}>
-        <div className='bg-white m-auto max-w-[1440px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[490px] px-8 py-10'> { /** Wrapper for the application responsiveness. */ }
-          <div className="w-full h-[500px]">
+        <div className='bg-white m-auto max-w-[1440px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[490px]'> { /** Wrapper for the application responsiveness. */ }
+          <div className="w-full h-[400px]">
             <Link href="/" className="relative w-full h-full">
-              <Image src={image} alt={""} className="relative h-full max-w-full object-cover"></Image>
+              <Image src={image} alt={""} className="relative h-full max-w-full object-none"></Image>
             </Link>
           </div>
-          <MenuComponent menu={menu} />
-          <section className="flex row gap-4 mt-8">
-            {children}
-            <aside className="w-1/3 bg-gray-200 p-2 h-fit">
-              <h4 className="uppercase text-center mb-4">Nos sigam no instagram</h4>
-              <div className="grid grid-cols-2 gap-2">
-                <div className="h-[140px] w-full bg-black"></div>
-                <div className="h-[140px] w-full bg-black"></div>
-                <div className="h-[140px] w-full bg-black"></div>
-                <div className="h-[140px] w-full bg-black"></div>
-                <div className="h-[140px] w-full bg-black"></div>
-                <div className="h-[140px] w-full bg-black"></div>
-              </div>
-            </aside>
-          </section>
+          <div className="px-8 py-4">
+            <MenuComponent menu={menu} />
+            <section className="flex row gap-4 mt-4">
+              {children}
+              <aside className="w-1/3 bg-gray-200 p-2 h-fit">
+                <h4 className="uppercase text-center mb-4">Nos sigam no instagram</h4>
+                <div className="grid grid-cols-1 gap-2">
+                  <div className="h-[140px] w-full bg-black"></div>
+                  <div className="h-[140px] w-full bg-black"></div>
+                  <div className="h-[140px] w-full bg-black"></div>
+                  <div className="h-[140px] w-full bg-black"></div>
+                  <div className="h-[140px] w-full bg-black"></div>
+                  <div className="h-[140px] w-full bg-black"></div>
+                </div>
+              </aside>
+            </section>
+          </div>
         </div>
       </body>
     </html>
