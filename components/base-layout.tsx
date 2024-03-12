@@ -64,9 +64,9 @@ export default function BaseLayout({
   return (
     <html lang="en">
       <body className={`${abel.className} bg-repeat bg-fixed bg-auto bg-left-top bg-[url('../public/background.jpg')] overflow-scroll text-black`}>
-        <div className='bg-white m-auto max-w-[1440px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[490px]'> { /** Wrapper for the application responsiveness. */ }
-          <div className="w-full h-[400px]">
-            <Link href="/" className="relative w-full h-full">
+        <div className='bg-white m-auto max-w-[1440px] lg:max-w-full'> { /** Wrapper for the application responsiveness. */ }
+          <div className="max-w-full h-[400px]">
+            <Link href="/" className="relative max-w-full h-full">
               <Image src={image} alt={""} className="relative h-full max-w-full object-none"></Image>
             </Link>
           </div>
