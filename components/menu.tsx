@@ -21,18 +21,16 @@ export default function MenuComponent({
   menu
 }: Readonly<MenuProps>) {
   return (
-    <div className="h-12">
-      <ul className="flex row w-full justify-between h-full items-center">
-        {menu.map((item) => {
-          return (
-            <li key={item.titulo}>
-              <Link href={item.href} className="text-base text-brown hover:text-black transition-anchor">
-                {item.titulo}
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className="flex row w-full justify-between h-full items-center">
+      {menu.map((item) => {
+        return (
+          <li key={item.titulo}>
+            <Link href={item.href} className="text-xl text-brown hover:text-black transition-anchor">
+              {item.titulo}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
