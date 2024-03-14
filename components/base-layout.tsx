@@ -73,7 +73,9 @@ export default function BaseLayout({
           <div className="px-8 py-4">
             <MenuComponent menu={menu} />
             <section className="flex row gap-4 mt-4">
-              {children}
+              <main className="w-full">
+                {children}
+              </main>
               <aside className="w-1/3 bg-gray-200 p-2 h-fit">
                 <h4 className="uppercase text-center mb-4">Nos sigam no instagram</h4>
                 <div className="grid grid-cols-1 gap-2">
