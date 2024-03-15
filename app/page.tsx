@@ -6,7 +6,7 @@ export default function Home() {
     <main className="w-full text-black flex flex-col gap-8">
       {
         posts.map((post) => {
-          return <PostCard post={post}></PostCard>
+          return <PostCard key={post.title} post={post}></PostCard>
         })
       }
     </main>
