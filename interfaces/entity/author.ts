@@ -1,4 +1,4 @@
-export interface Author {
+export interface AuthorEntity {
   id: string
   name: string
   bio: string
