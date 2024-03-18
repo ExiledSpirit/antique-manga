@@ -5,13 +5,12 @@ export interface PostEntity {
   id: string
   title: string
   excerpt: string
-  fk_cover_image: string
+  coverImageUrl: string
   slug: string
   author: AuthorEntity
   categories: Array<CategoryEntity>
-  created_at: Date
-  updated_at: Date
-  published_at: Date
+  createdAt: Date
+  updatedAt: Date | null
+  publishedAt: Date | null
   content: string
-  cover_image_url: string
 }

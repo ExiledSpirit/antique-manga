@@ -1,56 +1,83 @@
-import { Post } from "@/components/post-card";
+import { AuthorEntity } from '@/interfaces/entity/author'
+import { CategoryEntity } from '@/interfaces/entity/category'
+import { PostEntity } from '@/interfaces/entity/post'
 
-const imgSrc = 'https://antiquemanga.files.wordpress.com/2022/05/antiquemanga-lovingcoupleballroom-1.jpg';
-
-const author = {
-  id: 0,
-  name: 'camie'
+const author: AuthorEntity = {
+  id: '0',
+  name: 'camie',
+  bio: 'Hi there!',
+  email: 'camie@gmail.com'
 }
 
-export const posts: Post[] = [
+const categoryManga: CategoryEntity = {
+  created_at: new Date('2014-01-01'),
+  updated_at: null,
+  description: 'Mangas description',
+  id: '0',
+  name: 'Mangá',
+  post_quantity: 0
+}
+
+const categoryManhwa: CategoryEntity = {
+  created_at: new Date('2014-01-01'),
+  updated_at: null,
+  description: 'Manhwas description',
+  id: '0',
+  name: 'Manhwa',
+  post_quantity: 0
+}
+
+export const posts: PostEntity[] = [
   {
     author,
-    comments: [],
-    date: new Date(),
-    imgSrc: 'https://antiquemanga.files.wordpress.com/2022/05/anucc81ncio-banner.jpg',
     title: 'Esclarecendo perguntas frequentes',
-    tags: ['anúncio'],
-    content: 'Quando tem postagens? O que são essas mudanças no site? Vocês vão terminar o projeto tal? Estão aceitando parceria? Por que ficaram inativos? Qual o gasto anual mínimo? E muito mais…'
+    categories: new Array(categoryManga, categoryManhwa),
+    content: '<article><h1>Teste</h1></article>',
+    coverImageUrl: 'https://pulenao.com.br/wp-content/uploads/2024/02/2xko.png',
+    createdAt: new Date(),
+    excerpt: 'Descrição do post. Essa é a descrição do post pois para conseguir descrever do que se trata.',
+    id: '0',
+    publishedAt: new Date(),
+    slug: 'esclarecendo-perguntas-frequentes',
+    updatedAt: null
   },
   {
     author,
-    comments: [],
-    date: new Date(),
-    imgSrc: 'https://antiquemanga.files.wordpress.com/2022/04/themasquerade.jpg',
-    title: '100% PERFECT GIRL',
-    tags: ['drama', 'romance'],
-    content: 'Boa noite amantes de mangas e manhwas, a scan quer dar continuidade a essa obra prima coreana, que è 100% Perfct girl, esaa obra està ha anos abandonada… Estou ansiosa […]'
+    title: 'Esclarecendo perguntas frequentes',
+    categories: new Array(categoryManga, categoryManhwa),
+    content: '<article><h1>Teste</h1></article>',
+    coverImageUrl: 'https://pulenao.com.br/wp-content/uploads/2024/02/2xko.png',
+    createdAt: new Date(),
+    excerpt: 'Descrição do post. Essa é a descrição do post pois para conseguir descrever do que se trata.',
+    id: '0',
+    publishedAt: new Date(),
+    slug: 'esclarecendo-perguntas-frequentes',
+    updatedAt: null
   },
   {
     author,
-    comments: [],
-    date: new Date(),
-    imgSrc: 'https://antiquemanga.files.wordpress.com/2022/04/themasquerade.jpg',
-    title: 'THE MASQUERADE – CAP. 05',
-    tags: ['drama', 'historico', 'romance', 'yaoi'],
-    content: 'Finalmente depois de muito tempo, trazemos atualização de The Masquerade. Um webtoon maravilhoso, mas sou suspeita pra falar. Dessa vez com a tradução da Karu, nova membro da equipe. Muito […]'
+    title: 'Esclarecendo perguntas frequentes',
+    categories: new Array(categoryManga, categoryManhwa),
+    content: '<article><h1>Teste</h1></article>',
+    coverImageUrl: 'https://pulenao.com.br/wp-content/uploads/2024/02/2xko.png',
+    createdAt: new Date(),
+    excerpt: 'Descrição do post. Essa é a descrição do post pois para conseguir descrever do que se trata.',
+    id: '0',
+    publishedAt: new Date(),
+    slug: 'esclarecendo-perguntas-frequentes',
+    updatedAt: null
   },
   {
     author,
-    comments: [],
-    date: new Date(),
-    imgSrc,
-    title: 'Título',
-    tags: ['mangá', 'manhwa', 'anúncio'],
-    content: 'Quando tem postagens? O que são essas mudanças no site? Vocês vão terminar o projeto tal? Estão aceitando parceria? Por que ficaram inativos? Qual o gasto anual mínimo? E muito mais…'
+    title: 'Esclarecendo perguntas frequentes',
+    categories: new Array(categoryManga, categoryManhwa),
+    content: '<article><h1>Teste</h1></article>',
+    coverImageUrl: 'https://pulenao.com.br/wp-content/uploads/2024/02/2xko.png',
+    createdAt: new Date(),
+    excerpt: 'Descrição do post. Essa é a descrição do post pois para conseguir descrever do que se trata.',
+    id: '0',
+    publishedAt: new Date(),
+    slug: 'esclarecendo-perguntas-frequentes',
+    updatedAt: null
   },
-  {
-    author,
-    comments: [],
-    date: new Date(),
-    imgSrc,
-    title: 'Título',
-    tags: ['mangá', 'manhwa', 'anúncio'],
-    content: 'Quando tem postagens? O que são essas mudanças no site? Vocês vão terminar o projeto tal? Estão aceitando parceria? Por que ficaram inativos? Qual o gasto anual mínimo? E muito mais…'
-  }
 ]
