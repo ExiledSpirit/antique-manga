@@ -1,12 +1,12 @@
-import { Abel } from "next/font/google";
-import "../styles/globals.css";
-import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
-import MenuComponent, { MenuItem } from "./menu";
+import { Abel } from 'next/font/google';
+import '../styles/globals.css';
+import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
+import MenuComponent, { MenuItem } from './menu';
 
 const abel = Abel({
-  subsets: ["latin"],
-  weight: "400"
+  subsets: ['latin'],
+  weight: '400'
 });
 
 const menu: MenuItem[] = [
@@ -67,7 +67,7 @@ export default function BaseLayout({
         <div className='bg-white m-auto max-w-[1440px] lg:max-w-full'> { /** Wrapper for the application responsiveness. */ }
           <div className="max-w-full h-[400px]">
             <Link href="/" className="relative max-w-full h-full">
-              <Image src={image} alt={""} className="relative h-full max-w-full object-none"></Image>
+              <Image src={image} alt={''} className="relative h-full max-w-full object-none"></Image>
             </Link>
           </div>
           <div className="px-8 py-4">

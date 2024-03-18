@@ -1,6 +1,6 @@
 import { PostEntity } from '@/interfaces/entity/post';
 import { format } from 'date-fns';
-import Link from "next/link";
+import Link from 'next/link';
 
 interface PostCardProps {
   post: PostEntity

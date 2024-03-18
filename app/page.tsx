@@ -1,5 +1,5 @@
-import PostCard from "@/components/post-card";
-import { posts } from "@/data/posts";
+import PostCard from '@/components/post-card';
+import { posts } from '@/data/posts';
 
 export default function Home() {
   return (

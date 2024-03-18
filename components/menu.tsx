@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
-import "../styles/globals.css";
-import Link from "next/link";
-import Image from "next/image";
+import { Inter } from 'next/font/google';
+import '../styles/globals.css';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 type NextImage = typeof Image;
 

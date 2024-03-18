@@ -1,5 +1,5 @@
-import { PostEntity } from "@/interfaces/entity/post";
-import Markdown from "react-markdown";
+import { PostEntity } from '@/interfaces/entity/post';
+import Markdown from 'react-markdown';
 
 interface Props {
   post: PostEntity

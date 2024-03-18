@@ -1,8 +1,8 @@
-import { PostContent } from "@/components/post-content";
-import { posts } from "@/data/posts";
-import { PostEntity } from "@/interfaces/entity/post";
-import { GetStaticProps, GetStaticPropsContext, GetStaticPaths } from "next";
-import { Fragment } from "react";
+import { PostContent } from '@/components/post-content';
+import { posts } from '@/data/posts';
+import { PostEntity } from '@/interfaces/entity/post';
+import { GetStaticProps, GetStaticPropsContext, GetStaticPaths } from 'next';
+import { Fragment } from 'react';
 
 interface Props {
   post: PostEntity
