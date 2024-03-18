@@ -1,4 +1,5 @@
 import { PostEntity } from '@/interfaces/entity/post';
+import ReactMarkdown from 'react-markdown';
 import Markdown from 'react-markdown';
 
 interface Props {
@@ -11,7 +12,7 @@ export function PostContent({
   return (
     <div>
       <h1>{post?.title}</h1>
-      <Markdown>{post?.content}</Markdown>
+      <ReactMarkdown>{post?.content}</ReactMarkdown>
     </div>
   )
 }
