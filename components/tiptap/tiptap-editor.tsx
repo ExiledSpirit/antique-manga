@@ -186,6 +186,7 @@ export default function TiptapEditor() {
   
   const extensions = [
     Color.configure({ types: [TextStyle.name, ListItem.name] }),
+    TextStyle.configure({ HTMLAttributes: [ListItem.name] }),
     StarterKit.configure({
       bulletList: {
         keepMarks: true,
