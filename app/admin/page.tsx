@@ -1,11 +1,11 @@
 import React from 'react';
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import TiptapEditor from '@/components/tiptap/tiptap-editor';
+import PostEditor from '@/components/post-editor';
 
 export default function Admin() {
   return (
     <main className="w-full text-black flex flex-col gap-8">
-      <TiptapEditor />
+      <PostEditor></PostEditor>
     </main>
   );
 }
